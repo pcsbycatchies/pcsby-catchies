@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Product</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<style>	  
+	  #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+.modall {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+ #myImg1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg1:hover {opacity: 0.7;}
+
+.modall {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+ #myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+.modall {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+ #myImg3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg3:hover {opacity: 0.7;}
+
+.modall {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-con {
+  position: center;
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-con, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #bbb;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-con {
+    width: 100%;
+  }
+}
+</style>
+   </head>
+   <!-- body -->
+   <body class="main-layout product_pagr">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header class="section">
+         <!-- header inner -->
+        <div class="header_main">
+         <div class="header_main">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo" style="margin-bottom: 10px"> <a href="index.html"><img src="images/logo1.png" alt="#"></a> </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <div class="menu-area">
+                        <div class="limit-box">
+                           <nav class="main-menu">
+                              <ul class="menu-area-main">
+                                 <li> <a href="index.html">Home</a> </li>
+								 <li><a href="product.html">Product</a></li>
+								 <li><a href="contact.html">Contact Us</a></li>
+                                 <li> <a href="about.html">About Us</a> </li>
+                                 <!-- <li class="last"><a href="#"><img src="images/search_icon.png" alt="icon"/></a></li> -->
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+        </div>
+         <!-- end header inner -->
+      </header>
+      <!-- end header -->
+
+       <!-- plant -->
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2><strong>K-poPhotocards ❤️</strong></h2>
+					 <p style="font-size: 20px; text-align: justify">K-poPhotocards are cards featuring images your biased. They are included as items in albums. Fans who are biased with<br> K-pop are enjoying colecting it.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  
+	  
+	  <section >
+            <div class="container">
+				<div class="row" style="margin-bottom: 10px">
+					<div class="col-md-12">
+						<h3 style="color:#136af8; font-size:30px"><strong>Price:</strong></h3>
+						<div class="titlepage">
+							<div class="row">
+								<div class="col-md-6">
+									<p style="font-size: 20px; color:black;"><strong>- Plain: ₱ 10.00</strong></p><br>
+									<p style="font-size: 20px; color:black;"><strong>- w/ Design: ₱ 20.00</strong></p><br>
+									<p style="font-size: 20px; color:black;"><strong>- Delivery fee: ₱ 20.00</strong></p>
+								</div>
+								<div class="col-md-6" style="margin-bottom:20px">
+									<h3 style="color:#136af8; font-size:30px; margin-top:-50px"><strong>Message US!</strong></h3>
+									<p style="color:black; font-size:18px">If you want to order <strong>"with design photocards"</strong> of your biased.</p>
+								<div class="">
+									<form action="checkout.html">
+										<div class="form-group">
+										   <input type="text" class="form-control form-control-sm" style="color:black" placeholder="Name of the artist" name="Name" required>
+										</div>
+										<div class="form-group">
+										   <input type="text" class="form-control form-control-sm" style="color:black;" placeholder="(Specify the design you want)" name="Name" required>
+										</div>
+										<div class="submit_btn">
+											<button type="submit" class="btn btn-primary" data-name="with Design" data-price="20" style="background: #081b30;">Send</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </section>
+			
+	  
+<div class="container">
+    <div class="row" style="margin-bottom: 30px;background-color:#0a1422; padding-top: 10px; padding-bottom: 10px; ">
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+		  <button class="clear-cart btn btn-danger">Clear Cart</button></div>
+    </div>
+</div>
+
+<!-- Main -->
+<div class="container">
+    <div class="row">
+		<div class="col-md-6" style="margin-bottom: 20px">
+			<div class="card">
+				<img class="card-img-top" id="myImg" src="./images/seventeen.jpg" alt="Seventeen">
+				<div class="card-block" style="text-align:center">
+				<h4 class="card-title"><strong>Seventeen</strong></h4>
+				<p class="card-text">Price: ₱ 10</p>
+				<a href="#" data-name="Seventeen" data-price="10" class="add-to-cart btn btn-primary">Add to cart</a>
+				<!--<a href="#" data-namee="Seventeen w/ design" data-price="20" class="add-to-cart btn btn-primary">Add to cart<br>w/ design</a>-->
+			</div>
+		</div>
+    </div>
+		<div class="col-md-6" style="margin-bottom: 20px">
+			<div class="card">
+				<img class="card-img-top" id="myImg1" src="./images/blackpink.jpg" alt="Blackpink">
+				<div class="card-block" style="text-align:center">
+				<h4 class="card-title"><strong>Blackpink</strong></h4>
+				<p class="card-text">Price: ₱ 10</p>
+				<a href="#" data-name="Blackpink" data-price="10" class="add-to-cart btn btn-primary">Add to cart</a>
+				<!--<a href="#" data-namee="Blackpink w/ design" data-price="20" class="add-to-cart btn btn-primary">Add to cart<br>w/ design</a>-->
+			</div>
+		</div>
+    </div>
+		<div class="col-md-6" style="margin-bottom: 20px">
+			<div class="card">
+				<img class="card-img-top" id="myImg2" src="./images/lisa.jpg" alt="Lisa">
+				<div class="card-block" style="text-align:center">
+				<h4 class="card-title"><strong>Lisa</strong></h4>
+				<p class="card-text">Price: ₱ 10</p>
+				<a href="#" data-name="Lisa" data-price="10" class="add-to-cart btn btn-primary">Add to cart</a>
+				<!--<a href="#" data-namee="Lisa w/ design" data-price="20" class="add-to-cart btn btn-primary">Add to cart<br>w/ design</a>-->
+			</div>
+		</div>
+    </div>
+		<div class="col-md-6" style="margin-bottom: 20px">
+			<div class="card">
+				<img class="card-img-top" id="myImg3" src="./images/twice.jpg" alt="Twice">
+				<div class="card-block" style="text-align:center">
+				<h4 class="card-title"><strong>Twice</strong></h4>
+				<p class="card-text">Price: ₱ 10</p>
+				<a href="#" data-name="Twice" data-price="10" class="add-to-cart btn btn-primary">Add to cart</a>
+				<!--<a href="#" data-namee="Twice w/ design" data-price="20" class="add-to-cart btn btn-primary">Add to cart<br>w/ design</a>-->
+			</div>
+		</div>
+    </div>
+</div>
+
+			<div id="myModal" class="modall">
+			  <span class="close">&times;</span>
+			  <img class="modal-con" id="img01">
+			  <div id="caption" style="font-size:30px"></div>
+			</div>
+
+
+
+  
+ <!-- Modal -->
+			<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					<table class="show-cart table">
+					  
+					</table>
+					<div>Total price: ₱ <span class="total-cart"></span></div>
+				  </div>
+				  <div class="" style="padding: 10px; margin-top:30px; position:center">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<a href="checkout.html"><button type="submit" class="clear-cart btn btn-primary" id="myImg4" >CHECKOUT</button></a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	  
+	  
+	  
+	  
+         <!--<div class="container">
+            <div class="row" style="margin-bottom: 30px">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2><strong>We also accept Customized Photocards!</strong></h2>
+					 <span style="font-size: 15px">Featuring pictures of you, your favourite artists, or special moments, our photocards are exquisitely crafted, premium collectible cards. To guarantee an exquisite visual appeal, every card is created with care with great care.</span>
+							<div class="row">
+								<div class="col-md-6">
+									<span style="font-size: 25px; margin-top: 10%; color: #136af8"><strong>How to order:</strong></span>
+									<span style="font-size: 15px">>>> <strong>Fill up the form:</strong></span>
+									<span style="font-size: 15px">1. <strong>Name of the Client</strong></span>
+									<span style="font-size: 15px">2. <strong>Size: (Specify the size of the photocards)</strong></span>
+									<span style="font-size: 15px">3. <strong>Customization: (Specify of customization you want)</strong></span>
+									<span style="font-size: 15px">4. <strong>Date & Time: (Provide an estimated date and time for production and delivery, there’s additional for rush delivery)</strong></span>
+									<span style="font-size: 15px">5. <strong>Contact number of the client.</strong></span>
+									<span style="font-size: 15px">6. <strong>Upload the picture that you want for the customization.</strong></span>
+									<span style="font-size: 25px; margin-top: 20px; color: #136af8"><strong>Product Price:</strong></span>
+									<span style="font-size: 20px; margin-top: 10px">>>> <strong>3 pcs: 90 pesos</strong></span>
+									<span style="font-size: 20px">>>> <strong>5 pcs: 135 pesos</strong></span>
+									<span style="font-size: 20px">>>> <strong>more will be depends.</strong></span>
+									<span style="font-size: 25px; margin-top: 10px; color: #136af8"><strong>Note:</strong></span>
+									<span style="font-size: 20px">>>> <strong>Additional Design: 15 pesos</strong></span>
+									<span style="font-size: 20px">>>> <strong>(Delivery Fee: 40 pesos)</strong></span>
+									<span style="font-size: 20px">>>> <strong>(Pick-up Fee: 20 pesos)</strong></span>
+								</div>
+								<div class="col-md-6">
+								  <div class="email_btn">
+									<form action="message.html">
+										<div class="form-group">
+										   <input type="text" class="form-control form-control-sm" placeholder="Name" name="Name" required>
+										</div>
+										<div class="form-group">
+										   <input type="text" class="form-control form-control-sm" placeholder="Photocard Size" name="Size" required>
+										</div>
+										<div class="form-group">
+										   <input type="text" class="form-control form-control-sm" placeholder="Customization" name="Customization" required>
+										</div>
+										<div class="form-group" style="padding-left: 10px">
+										   <span style="font-size: 15px">Date & Time</span>
+										   <input type="datetime-local" value="+010000-01-01T05:00" /required>
+										</div>
+										<div class="form-group">
+										   <input  type="tel" class="form-control form-control-sm" placeholder="Contact Number" name="Phone" size="50%" maxlength="11" onkeypress="return onlyNumberKey(event)" /required>
+										</div>
+										<div class="form-group">
+										   <input  type="file" class="form-control form-control-sm" id="file1" name="upload" required>
+										</div>
+										 <div class="submit_btn">
+											<button type="submit" class="btn btn-primary" style="background: #081b30;">Send</button>
+											</div>
+									</form>
+								  </div>
+							    </div>
+							</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <!-- end plant -->
+     <!-- footer start-->
+      <div class="footer1">
+            <p>© 2023 All Rights Reserved.</p>
+       </div>
+
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>\
+	  <script src="js/cart.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  <script  src="js/script.js"></script>
+      <script>
+         $(document).ready(function(){
+         $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+         
+         $(".zoom").hover(function(){
+         
+         $(this).addClass('transition');
+         }, function(){
+         
+         $(this).removeClass('transition');
+         });
+         });
+         
+      </script>
+	  <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+<script>
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg1");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+<script>
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg2");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+<script>
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg3");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+
+
+</body>
+</html>
